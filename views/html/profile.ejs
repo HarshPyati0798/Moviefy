@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link rel="stylesheet" href="/css/profile.css">
+
+</head>
+<body>
+    <%- console.log(movies) %>
+    <div class="title">
+        <span class="name"><a href = "/">Welcome to Moviefy</a></span>
+        <span class="span" style="position:relative;left: -10px;top: 7px;"><a href="activity"><h3 style="background:none;">Activity</h3></a></span>
+    </div>
+    
+    <div class="container">
+        <div class="pop">
+            <h2>POPULAR MOVIES</h2>
+            <div class="popular">
+                
+            </div>
+        </div>
+        <div class="upcoming">
+            <h2>UPCOMING MOVIES</h2>
+            <div class="upc_list">
+
+            </div>
+        </div>
+        <!-- <% movies.forEach((movie) => { %>
+
+        <% }); %> -->
+        <div class="watched">
+            <h2 id="watched" >WATCHED MOVIES</h2>
+            <div style="font-size: 20px;">
+                <% movies.forEach((movie) => { %>
+                    <%- console.log(movie) %>
+                    <% if(movie.type == 'watched'){ %>
+                        <%- include('saved',{movie: movie}) %>
+                    <% } %>
+                <% }); %>
+            </div>
+        </div>
+        <div class="watchlist">
+            <h2>WATCHLIST</h1>
+            <div>
+                <% movies.forEach((movie) => { %>
+                    <%- console.log(movie) %>
+                    <% if(movie.type == 'watchlist'){ %>
+                        <%- include('saved',{movie: movie}) %>
+                    <% } %>
+                <% }); %>
+            </div>
+        </div>
+        <div class="favorite">
+            <h2>FAVORITE</h1>
+            <div>
+                <% movies.forEach((movie) => { %>
+                    <%- console.log(movie) %>
+                    <% if(movie.type == 'favorite'){ %>
+                        <%- include('saved',{movie: movie}) %>
+                    <% } %>
+                <% }); %>
+            </div>
+        </div>
+        <!-- <div class="friends">
+            <h2>YOUR FRIENDS ARE WATCHING</h1>
+        </div> -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script src="/js/profile.js"></script>
+</body>
+</html>

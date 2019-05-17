@@ -1,0 +1,30 @@
+.welcome{
+    height:500;
+    width: 200;
+}
+
+.welcome h1{
+    text-align: center;
+    background:#e22d2d;
+    color:white;
+    cursor: pointer;
+    transition: 1ms;
+}
+
+.welcome h1:hover{
+    color:#e22d2d;
+    background: white;
+}
+
+.headers{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.form_tag{
+    margin-top: 15px;
+}
+
+.signup_form form{
+    text-align: center;
+}

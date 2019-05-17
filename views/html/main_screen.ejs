@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moviefy</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header style="margin-top:25px; width: 100%;background-color: #e22422;">
+        <div style="width:100%;">
+            <h1 class="title" style="width: 110px;text-align:center"><a href="/">Moviefy</a></h1>
+            <div class="search-bar">
+                <i id = 'search' class="fa fa-search search-icon"><a href="review"></a></i>
+                <input id = "button" type="text" placeholder="Search your favorite movie" autofocus="autofocus" class="movie-name"/>
+                <button><a href="profile" target = "_blank" style="text-decoration:none;color:white;background-color:#ff4949;font-size: 17px;cursor:pointer;"><h4 style="background:none;">Profile</h4></a></button>
+            </div>
+        </div>
+    </header>
+    <div class="sub-title">
+        <h1>Keep Track of all your favorite movies in one place:)</h1>
+    </div>
+    <div class="search-results">
+        <div class="results_list">
+        </div>
+    </div>
+    <script src="/js/fetch.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+</body>
+</html>

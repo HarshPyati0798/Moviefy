@@ -1,0 +1,261 @@
+*{
+    font-family: Dosis,Poppins,sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #4d4d4d;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.sub-title{
+    margin: auto;
+    text-align: center;
+    visibility: visible;
+}
+
+/* Styling for the header(title) */
+.title{
+    padding: 5px;
+    background: #e22d2d;
+    float: left;
+    position: relative;
+    top: -25px;
+    transition: all 0.1s;
+    cursor: pointer;
+    font-size: 38px;
+    transition: all 10ms;
+}
+
+.title:hover{
+    background:white;
+    color: #ee2222;
+}
+
+.title a:hover{
+    background: white;
+    color: #e22d2d;
+    border: none;
+}
+
+.title a{
+    background: #e22d2d;
+    text-decoration: none;
+    border: none;
+}
+
+.btn:active{
+    border: none;
+}
+
+/* Styling for the search bar */
+.search-bar{
+    margin:0;
+    padding:0;
+    height: 58px;
+    float: left;
+    width: 90%;;
+    border:none;
+    position: relative;
+    top: -25px;
+    background: #ff4949;
+}
+
+.search-bar input{
+    background: none;
+    border: none;
+    position: relative;
+    left: 25px;
+    top: 15px;
+    width: inherit;
+    outline: none;
+    font-size: 18px;
+}
+
+.search-bar i:hover{
+    cursor: pointer;
+}
+.search-bar input::placeholder{
+    color:white;
+}
+
+.search-icon{
+    background: #ff4949;
+    position: relative;
+    top: 15px;
+    left: 20px;;
+}
+
+.search-bar button{
+    background: #ff4949;
+    border:none;
+    position: relative;
+    top: 15px;
+    right: -40px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Styling the Nav Contents*/
+.nav{
+    width: fit-content;
+    float:left;
+    height: 1250px;
+    z-index: 1000;
+}
+.nav ul{
+    margin-top: 25px;
+    display: inline-block;
+    border-bottom: 0.5px solid white;
+}
+.nav ul li{
+    margin-bottom: 15px;
+    margin-left: 2px;
+    transition: all 0.5s;
+}
+
+.nav ul li:hover{
+    color: #e22d2d;
+    cursor: pointer;
+}
+
+/* Styling the watched movies section */
+.watched_movies{
+    margin-left: 200px;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.watched_movies h2{
+    margin-top: 25px;
+}
+.watched_movies h2:hover{
+    color: #e22d2d;
+}
+.watched_movies div{
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 200px;
+    height: 275px;
+    cursor: pointer;
+}
+
+.watched_movies div img{
+    width: inherit;
+    height: 200px;
+}
+
+.watched_movies div p{
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+.watched_movies div p:hover{
+    color: #e22d2d;
+}
+
+/* Watchlist Styling */
+
+.watchlist_movies{
+    margin-left: 200px;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.watchlist_movies div{
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 200px;
+    height: 275px;
+    cursor: pointer;
+}
+
+.watchlist_movies h2:hover{
+    color: #e22d2d;
+}
+
+.btn{
+    background: #e22d2d;
+}
+.btn:hover{
+    color: #e22d2d;
+    background: white;
+}
+
+.link:hover{
+    color:#e22d2d;
+}
+
+.btn:active{
+    background:none;
+}
+.watchlist_movies div img{
+    width: inherit;
+    height: 200px;
+}
+
+.watchlist_movies div p{
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+.watchlist_movies div p:hover{
+    color: #e22d2d;
+}
+
+.results_indi{
+    color:'blue';
+    float: left;
+}
+
+.result_single{
+    margin-bottom:20px;
+    float:left;
+}
+
+.result_single a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* Styling the watched movies section */
+.upcoming_movies{
+    margin-left: 200px;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.upcoming_movies h2{
+    margin-top: 25px;
+}
+.upcoming_movies h2:hover{
+    color: #e22d2d;
+}
+.upcoming_movies div{
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 200px;
+    height: 275px;
+    cursor: pointer;
+}
+
+.upcoming_movies div img{
+    width: inherit;
+    height: 200px;
+}
+
+.upcoming_movies div p{
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+.upcoming_movies div p:hover{
+    color: #e22d2d;
+}

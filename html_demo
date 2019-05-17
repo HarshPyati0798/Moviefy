@@ -1,0 +1,49 @@
+<!-- <div class="watched_movies">
+        <h2>Watched Movies</h2>
+        <div id="movie-x">
+            <img src="../assets/bvs.jpg" alt="BVS">
+            <p>Batman vs SuperMan:DOJ</p>
+            <p>Superhero,Action</p>
+        </div>
+        <div id="movie-x">
+            <img src="../assets/aiw.png" alt="infinity Wars">
+            <p>Avengers: Infinity War</p>
+            <p>Superhero,Action</p>
+        </div>
+    </div> -->
+
+    <!-- <div class="watchlist_movies">
+        <h2>My Watchlist</h2>
+        <div id="movie-y">
+            <img src="../assets/goneg.png" alt="Gone Girl">
+            <p>Gone Girl</p>
+            <p>Crime,Suspense</p>
+        </div>
+        <div id="movie-y">
+            <img src="../assets/acc.jpg" alt="The Accountant">
+            <p>The Accountant</p>
+            <p>Crime,Suspense</p>
+        </div>
+    </div>
+    <div class="upcoming_movies">
+        <h2>Upcoming</h2>
+        <div id="movie-z">
+            <img src="../assets/cap.jpg" alt="Captain Marvel">
+            <p>Captain Marvel</p>
+            <p>Superhero,Science Fiction</p>
+        </div>
+        <div id="movie-z">
+            <img src="../assets/sha.jpg" alt="Shazam">
+            <p>Shazam</p>
+            <p>Superhero,Science Fiction</p>
+            <!--Add the ability to add whether he has watched it, rate, fav-->
+        <!--</div>
+    </div>
+    <div class="upcoming_movies">
+        <h2>My Favorite</h2>
+        <div id="movie-z">
+            <img src="../assets/bvs.jpg" alt="BatmanVSuperman">
+            <p>BatmanVSuperman</p>
+            <p>Superhero,Science Fiction</p>
+        </div>
+    </div> -->

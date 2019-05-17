@@ -1,0 +1,65 @@
+*{
+    font-family: Dosis,Poppins,sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #4d4d4d;
+    color: white;
+}
+
+.title{
+    background:#e22d2d;
+    cursor: pointer;
+    height: 50px;
+    text-align: center;
+    transition: all 100ms;
+}
+
+.name{
+    background: #e22d2d;
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+    left:100px;
+    text-transform: uppercase;
+    transition: all 100ms;
+}
+
+.span{
+    float: right;
+    background: #e22d2d;
+    margin-left: 10px;
+    margin-right: 5px;
+    position: relative;
+    top: 15px;
+    transition: all 100ms;
+}
+/* Rating */
+
+.review_film{
+    margin-left:20px;
+    position: relative;
+    left: 200px;
+    display: inline-flex;
+    margin-bottom: 20px;
+
+}
+
+.watched_movie,.review{
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.review form input[type=number]:focus{
+    border-color: 1px solid #ff4949;
+}
+
+.watched_movie li{
+    display: inline;
+    list-style-type: none;
+    color: #ff4949;
+}
+
+/* .watched_movie img{
+    width: 500px;
+} */
+

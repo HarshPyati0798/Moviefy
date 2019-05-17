@@ -1,0 +1,80 @@
+*{
+    background: #4d4d4d;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Dosis,Poppins,sans-serif;
+}
+
+.title{
+    background:#e22d2d;
+    cursor: pointer;
+    height: 50px;
+    text-align: center;
+    transition: all 100ms;
+}
+
+.name{
+    background: #e22d2d;
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+    left:50px;
+    text-transform: uppercase;
+    transition: all 100ms;
+}
+
+.span{
+    float: right;
+    background: #e22d2d;
+    margin-left: 10px;
+    margin-right: 5px;
+    position: relative;
+    top: 15px;
+    transition: all 100ms;
+}
+
+.span a,.name a{
+    text-decoration: none;
+    background: #e22d2d;
+}
+.container div{
+    margin-top: 15px;
+}
+
+.container div h2{
+    background-color: #e22d2d;
+    display: inline-block;
+    text-align: center;
+}
+
+.top,.upcoming,.watched,.watchlist,.favorite,.friends,.recommendations{
+    clear: both;
+}
+
+/* .upcoming{
+    overflow-x: scroll;
+} */
+
+.watched__list{
+    float: left;
+}
+
+.watched__list div{
+    float: left;
+    margin-right: 10px;
+}
+
+.movie{
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+

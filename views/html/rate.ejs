@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rate</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/nav.css">
+</head>
+<body>
+    <div class="title">
+        <span class="name">Welcome to Moviefy</span>
+        <span class="span">Activity</span>
+    </div>
+    
+    <h2 style="margin-top:10px; margin-left: 20px; margin-bottom: 10px; position: relative; left: 20px;text-align:center;color: #e22d2d">Rate <strong style="color:white"><%- apiData.title %></strong></h2>
+    <br/>
+    <% const base_url = 'http://image.tmdb.org/t/p/w154'; %>
+    <div class="review_film" style = "font-size: 25px;">
+        <div class="watched_movie">
+            <img src="<%- base_url + apiData.poster_path %>" alt="<%- apiData.title %>">
+            <p><%- apiData.title %></p>
+            <% apiData.genres.forEach(function(genre){ %>
+                <%- include('list_items',{item:genre.name}) %>
+            <% }); %>
+        </div>
+        <div class="review"></div>
+            <form action="/reviewed/<%- apiData.id %>" method="post">
+                <label for="rating"><strong>How much would you like to rate this movie out of 10?</strong></label>
+                <br/>
+                <input type="number" max="10" id="rating" name="rating" required/>
+                <br/>
+                <label for=""><strong>Care to write a detailed description?</strong></label>
+                <br/>
+                <textarea name="review" id="" cols="50" rows="2" id="rev" value="review"></textarea>
+                <br/>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

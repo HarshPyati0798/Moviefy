@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link rel="stylesheet" href="/css/profile.css">
+    <title>Activity</title>
+</head>
+<body>
+    <div class="title">
+        <span class="name"><a href = "/">Welcome to Moviefy</a></span>
+        <span class="span" style="position:relative;left: -10px;top: 7px;"><a href="profile"><h3 style="background:none;">Profile</h3></a></span>
+    </div>
+    <h1 style="text-align:center;">Activity</h1>
+    <% movies.forEach((movie) => { %>
+        <%- include('movie', {review: movie}) %>
+    <%}); %>
+</body>
+</html>

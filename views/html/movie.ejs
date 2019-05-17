@@ -1,0 +1,8 @@
+<div class="movie">
+    <%- console.log(review.url) %>
+    <h2><a href="<%- review.url %>"><%- review.title %></a> was rated <%- review.rating %></h2>
+    <p><%- review.date %></p>
+    <% if(review.description !== ''){ %>
+        <p><%- review.description %></p>
+    <% } %>
+</div>
